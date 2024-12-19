@@ -13,3 +13,8 @@ grasp 견고성을 높이기 위해 새로운 grasp affinity field를 설계하�
 
 이 모델은 PoineNet을 백본으로 사용하고 있으며 구조는 다음과 같다.  
 ![GraspNet 모델 구조](./images/graspnet_model_image.png)
+
+GraspNet-baseline에서 제공하는 학습 코드는 단일 GPU를 통해 학습을 진행하도록 구현 되어있다.  
+따라서 본 프로젝트를 통해 Distributed Training의 Data Parallelism 기법을 적용하여  
+사용가능한 GPU를 최대한 활용하여 학습을 진행하고, 단일 GPU를 사용했을때와 비교하여 학습에 소요되는 시간, resource 사용량,  
+학습 후 모델의 성능 등을 비교한다.
